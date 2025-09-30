@@ -1,21 +1,23 @@
-import javax.xml.namespace.QName;
-
 public class PizzaTester {
 
     public static void main(String[] args) {
         System.out.println("Used to test our Pizza overloaded Constructors");
-        //Create a pizza object
+        //Create a pizza1 object
 
         System.out.println("Example using one of the Pizza constructor");
         System.out.println("Only specify name, price and size:");
 
-        Pizza pizzal = new Pizza(name: "Best Pizza", price: "20.99", size: "Large");
-        //output pizzal
-        pizzal.displayItem();
+        Pizza pizza1 = new Pizza("Best Pizza",20.99, "Large");
+        //output pizza1
+        pizza1.displayItem();
 
-        pizza pizza2 = new Pizza("2nd Best Pizza", price: 16.99, size:"Large", crustType:"Thin", toppings:"Jaibas");
+        System.out.println("Example using a different Pizza constructor");
+        System.out.println("Specify all of the Pizza attributes:");
 
+        Pizza pizza2 = new Pizza("2nd Best Pizza", 16.99, "Large", "Thin", "Mystery Meat");
+        //output pizza2
+        pizza2.displayItem();
+        
 
     }//ends our main Method
 }//ends our main Class
-
