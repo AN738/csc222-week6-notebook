@@ -6,6 +6,10 @@
 
 public class IceCream extends MenuItem {
 
+    private String flavor;
+    private int scoops;
+    private String coneType;
+
     // ------------------------------------------------------------
     // TODO 1) Declare fields:
     //   private String flavor;
@@ -24,6 +28,13 @@ public class IceCream extends MenuItem {
     // Add end-of-block comments.
     // ------------------------------------------------------------
 
+    public IceCream(String name, double price, String flavor, int scoops, String coneType) {
+        super(name, price);
+        this.flavor = flavor;
+        this.scoops = scoops;
+        this.coneType = coneType;
+
+    }//Ends IceCream constructor
 
 
     // ------------------------------------------------------------
