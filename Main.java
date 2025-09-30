@@ -75,7 +75,43 @@ public class Main {
                     System.out.println("Menu is full. Cannot add more items.\n");
                 } // end if capacity
 
-            } // end else if drink
+            } //end else if drink
+
+
+            else if (choice.equals("icecream")) {
+
+                // --------------------------------------------------------
+                // TODO: Prompt for ice cream details, then construct IceCream.
+                //       Use your existing prompt helpers (prompt, promptDouble, promptInt) if available.
+                //
+                //   String name = prompt(sc, "Menu name for this ice cream: ");
+                //   double price = promptDouble(sc, "Price (e.g., 3.49): ");
+                //   String flavor = prompt(sc, "Flavor (e.g., Vanilla, Chocolate): ");
+                //   int scoops = promptInt(sc, "Scoops (e.g., 1, 2, 3): ");
+                //   String coneType = prompt(sc, "Cone type (Cup/Sugar/Waffle): ");
+                //
+                //   IceCream ic = new IceCream(name, price, flavor, scoops, coneType);
+                //
+                //   if (count < MAX) {
+                //       items[count] = ic;
+                //       count = count + 1;
+                //       System.out.println("Added IceCream.\n");
+                //   } else {
+                //       System.out.println("Menu is full. Cannot add more items.\n");
+                //   }
+                // --------------------------------------------------------
+
+
+
+            } // end else if icecream
+
+
+
+
+
+
+
+
             else {
                 System.out.println("Unrecognized option. Please type 'pizza', 'drink', or 'quit'.\n");
             } // end else invalid choice

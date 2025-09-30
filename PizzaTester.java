@@ -17,7 +17,7 @@ public class PizzaTester {
         Pizza pizza2 = new Pizza("2nd Best Pizza", 16.99, "Large", "Thin", "Mystery Meat");
         //output pizza2
         pizza2.displayItem();
-        
+
 
     }//ends our main Method
 }//ends our main Class
