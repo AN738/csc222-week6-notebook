@@ -46,20 +46,49 @@ public class IceCream extends MenuItem {
     //   }
     // ------------------------------------------------------------
 
-
+    public IceCream(String name, double price, String flavor) {
+        super(name, price);
+        this.flavor = flavor;
+        this.scoops = 1;
+        this.coneType = "Cup";
+    } //ends constructor overloded
 
     // ---------------------------
     // TODO 4) Getters
     // ---------------------------
 
+    public String getFlavor() {
+        return flavor;
+    }
 
+    public int getScoops() {
+        return scoops;
+    }
+
+    public String getConeType() {
+        return coneType;
+    }
 
     // ---------------------------
     // TODO 5) Setters
     // (Optional: simple validation in setScoops to reject values < 1.)
     // ---------------------------
 
+    public void setFlavor(String flavor) {
+        this.flavor = flavor;
+    }
 
+    public void setScoops(int scoops) {
+        if (scoops < 1) {
+            this.scoops = 1;
+        } else {
+            this.scoops = scoops;
+        }
+    }
+
+    public void setConeType(String coneType) {
+        this.coneType = coneType;
+    }
 
     // ------------------------------------------------------------
     // TODO 6) Override a display method:

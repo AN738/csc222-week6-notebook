@@ -103,7 +103,7 @@ public class Main {
 
 
 
-            } // end else if icecream
+            } // end else if ice cream
 
 
 
