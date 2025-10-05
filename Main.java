@@ -84,22 +84,21 @@ public class Main {
                 // TODO: Prompt for ice cream details, then construct IceCream.
                 //       Use your existing prompt helpers (prompt, promptDouble, promptInt) if available.
                 //
-                //   String name = prompt(sc, "Menu name for this ice cream: ");
-                //   double price = promptDouble(sc, "Price (e.g., 3.49): ");
-                //   String flavor = prompt(sc, "Flavor (e.g., Vanilla, Chocolate): ");
-                //   int scoops = promptInt(sc, "Scoops (e.g., 1, 2, 3): ");
-                //   String coneType = prompt(sc, "Cone type (Cup/Sugar/Waffle): ");
-                //
-                //   IceCream ic = new IceCream(name, price, flavor, scoops, coneType);
-                //
-                //   if (count < MAX) {
-                //       items[count] = ic;
-                //       count = count + 1;
-                //       System.out.println("Added IceCream.\n");
-                //   } else {
-                //       System.out.println("Menu is full. Cannot add more items.\n");
-                //   }
-                // --------------------------------------------------------
+                String name = prompt(sc, "Menu name for this ice cream: ");
+                double price = promptDouble(sc, "Price (e.g., 3.49): ");
+                String flavor = prompt(sc, "Flavor (e.g., Vanilla, Chocolate): ");
+                int scoops = promptInt(sc, "Scoops (e.g., 1, 2, 3): ");
+                String coneType = prompt(sc, "Cone type (Cup/Sugar/Waffle): ");
+
+                IceCream ic = new IceCream(name, price, flavor, scoops, coneType);
+
+                if (count < MAX) {
+                    items[count] = ic;
+                    count = count + 1;
+                    System.out.println("Added IceCream.\n");
+                } else {
+                    System.out.println("Menu is full. Cannot add more items.\n");
+                }//ends if capacity
 
 
 
@@ -155,6 +154,21 @@ public class Main {
             } // end try/catch
         } // end while
     } // end promptDouble
+
+    private static int promptInt(Scanner sc, String message) {
+        while (true) {
+            System.out.print(message);
+            String line = sc.nextLine();
+            String trimmed = line.trim();
+
+            try {
+                int value = Integer.parseInt(trimmed);
+                return value;
+            } catch (NumberFormatException nfe) {
+                System.out.println("Please enter a valid integer (eg. 1, 2, 3)");
+            }//end try/catch
+        }//end while
+    } //end promptInt
 
     private static boolean promptYesNo(Scanner sc, String message) {
         while (true) {

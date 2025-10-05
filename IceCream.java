@@ -4,6 +4,8 @@
 // TASKS: Add fields, constructors, getters/setters, and override display.
 // ---------------------------------------------------------------------
 
+import java.sql.SQLOutput;
+
 public class IceCream extends MenuItem {
 
     // ------------------------------------------------------------
@@ -101,6 +103,18 @@ public class IceCream extends MenuItem {
     //   }
     // ------------------------------------------------------------
 
+    @Override
+    public void displayItem() {
+        System.out.println("Type: IceCream");
+        System.out.println("Name: " + getName());
+        System.out.println("Price: $" + getPrice());
+        System.out.println("Flavor: " + flavor);
+        System.out.println("Scoops: " + scoops);
+        System.out.println("Come Type: " + coneType);
+        System.out.println("-------------------------------");
+
+
+    }//end displayItem
 
 
 } // end class IceCream
