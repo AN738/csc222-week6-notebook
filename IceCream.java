@@ -6,16 +6,16 @@
 
 public class IceCream extends MenuItem {
 
-    private String flavor;
-    private int scoops;
-    private String coneType;
-
     // ------------------------------------------------------------
     // TODO 1) Declare fields:
     //   private String flavor;
     //   private int scoops;
     //   private String coneType;
     // ------------------------------------------------------------
+
+    private String flavor;
+    private int scoops;
+    private String coneType;
 
 
 
